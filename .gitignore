@@ -1,2 +1,4 @@
 .idea/*
 src/META-INF/*
+out/*
+hci12.iml
