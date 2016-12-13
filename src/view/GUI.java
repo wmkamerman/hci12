@@ -2,9 +2,10 @@ package view;
 
 import javax.swing.*;
 
-public class GUI {
+public class GUI implements Runnable {
 
-    private static void run() {
+    @Override
+    public void run() {
         //Create and set up the window.
         JFrame frame = new JFrame("HelloWorldSwing");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,14 +18,5 @@ public class GUI {
         frame.pack();
         frame.setVisible(true);
     }
-
-    public static void run() {
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                createAndShowGUI();
-            }
-        });
-    }
-
 
 }

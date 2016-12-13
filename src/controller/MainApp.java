@@ -14,11 +14,10 @@ public class MainApp {
         gui = new GUI();
         clock = new Clock();
         listener = new Listener();
-
-        SwingUtilities.invokeLater();
-        Thread clockThread = new Thread(new Clock());
+        javax.swing.SwingUtilities.invokeLater(gui);
+        Thread clockThread = new Thread(clock);
         clockThread.start();
-        Thread listenerThread = new Thread(new Listener());
+        Thread listenerThread = new Thread(listener);
         listenerThread.start();
     }
 
