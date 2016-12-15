@@ -34,6 +34,7 @@ public class test {
             System.out.println(a.getId());
             System.out.println(a.getDatetime());
             System.out.println(a.getDescription());
+            System.out.println(a.getLocation());
             System.out.println("Participants:");
             for(String s : a.getParticipants()) {
                 System.out.println("    " + s);
